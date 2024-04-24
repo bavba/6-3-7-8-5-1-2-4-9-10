@@ -19,6 +19,17 @@ layout: default
 
   <div class="share-links">
     {% include sharelinks.html %}
+    <style>
+        #share-buttons > div {
+            display: none; /* Hide all social buttons by default */
+        }
+
+        #share-buttons > div.facebook,
+        #share-buttons > div.twitter,
+        #share-buttons > div.linkedin {
+            display: block; /* Display only Facebook, Twitter, and LinkedIn buttons */
+        }
+    </style>
   </div>
 
   <div class="post-content e-content" itemprop="articleBody">
